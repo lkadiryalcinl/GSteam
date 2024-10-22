@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "FilterService.Controllers.FiltersController",
+    "Method": "FilterGameServ",
+    "RelativePath": "api/Filters",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameFilterItem",
+        "Type": "FilterService.Models.GameFilterItem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

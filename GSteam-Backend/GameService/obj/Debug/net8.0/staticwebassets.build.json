@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dD8zG8s+l/l42SZbeVmTbElLuSv3Wlquc25UKcxzNkk=",
+  "Source": "GameService",
+  "BasePath": "_content/GameService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

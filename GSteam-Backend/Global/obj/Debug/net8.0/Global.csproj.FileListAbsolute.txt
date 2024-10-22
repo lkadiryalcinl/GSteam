@@ -1,0 +1,15 @@
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\bin\Debug\net8.0\Global.deps.json
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\bin\Debug\net8.0\Global.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\bin\Debug\net8.0\Global.pdb
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\bin\Debug\net8.0\Contracts.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\bin\Debug\net8.0\Contracts.pdb
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\Global.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\Global.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\Global.AssemblyInfoInputs.cache
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\Global.AssemblyInfo.cs
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\Global.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\Global.csproj.Up2Date
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\Global.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\refint\Global.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\Global.pdb
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\ref\Global.dll
