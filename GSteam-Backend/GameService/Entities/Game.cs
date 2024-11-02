@@ -5,6 +5,10 @@ namespace GameService.Entities
 {
     public class Game : BaseModel
     {
+        public Game() 
+        { 
+            GameImages = [];
+        }
         public string Name { get; set; }
         public string Author { get; set; }
 

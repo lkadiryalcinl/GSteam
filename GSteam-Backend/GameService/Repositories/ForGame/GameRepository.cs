@@ -27,7 +27,11 @@ namespace GameService.Repositories.ForGame
                 string gameUrl = await _fileService.UploadZip(game.GameFile);
                 var objDTO = _mapper.Map<Game>(game);
                 objDTO.VideoUrl = videoUrl;
-                objDTO.Info = gameUrl;
+                objDTO.GameImages.Add(new GameImage
+                {
+                    GameId = objDTO.Id,
+                    URL = gameUrl
+                });
                 await _context.Games.AddAsync(objDTO);
                 await _publishEndpoint.Publish(_mapper.Map<GameCreated>(objDTO));
 
@@ -84,12 +88,13 @@ namespace GameService.Repositories.ForGame
             Game gameObj = await _context.Games.FindAsync(gameId);
             if (gameObj is not null)
             {
-                gameObj.Price = game.Price;
-                gameObj.RecommendedSystemRequirement = game.RecommendedSystemRequirement;
-                gameObj.MinimumSystemRequirement = game.MinimumSystemRequirement;
-                gameObj.Author = game.Author;
-                gameObj.Name = game.Name;
-                gameObj.Description = game.Description;
+                //gameObj.Price = game.Price;
+                //gameObj.RecommendedSystemRequirement = game.RecommendedSystemRequirement;
+                //gameObj.MinimumSystemRequirement = game.MinimumSystemRequirement;
+                //gameObj.Author = game.Author;
+                //gameObj.Name = game.Name;
+                //gameObj.Description = game.Description;
+                _mapper.Map<UpdateGameDTO, Game>(game, gameObj);
                 await _publishEndpoint.Publish(_mapper.Map<GameUpdated>(gameObj));
                 if (await _context.SaveChangesAsync() > 0)
                 {

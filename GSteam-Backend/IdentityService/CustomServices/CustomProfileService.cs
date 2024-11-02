@@ -14,13 +14,14 @@ namespace IdentityService.CustomServices
         public async Task GetProfileDataAsync(ProfileDataRequestContext context)
         {
             var user = await _userManager.GetUserAsync(context.Subject);
-            //var existingClaims = await _userManager.GetClaimsAsync(user);
+            var existingClaims = await _userManager.GetClaimsAsync(user);
             var claims = new List<Claim>(){
-                new("username",user.UserName)
+                new("username",user.UserName),
+                new(ClaimTypes.NameIdentifier,user.Id)
             };
 
             context.IssuedClaims.AddRange(claims);
-            //context.IssuedClaims.Add(existingClaims.FirstOrDefault(x => x.Type == JwtClaimTypes.Name));
+            context.IssuedClaims.Add(existingClaims.FirstOrDefault(x => x.Type == JwtClaimTypes.Name));
         }
 
         public Task IsActiveAsync(IsActiveContext context)

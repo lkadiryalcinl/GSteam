@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "BasketService.Controllers.BasketsController",
+    "Method": "AddBasketItem",
+    "RelativePath": "api/Baskets",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "BasketService.Models.BasketModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BasketService.Controllers.BasketsController",
+    "Method": "RemoveBasketItem",
+    "RelativePath": "api/Baskets/{index}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "index",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BasketService.Controllers.BasketsController",
+    "Method": "GetBasketItem",
+    "RelativePath": "api/Baskets/BasketItem/{index}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "index",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BasketService.Controllers.BasketsController",
+    "Method": "GetListItems",
+    "RelativePath": "api/Baskets/BasketItems",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

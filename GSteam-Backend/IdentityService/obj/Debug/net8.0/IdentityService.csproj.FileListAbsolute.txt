@@ -93,3 +93,4 @@ C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\IdentityService\bin\Debug\net8.
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\IdentityService\bin\Debug\net8.0\IdentityService.pdb
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\IdentityService\obj\Debug\net8.0\IdentityService.genruntimeconfig.cache
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\IdentityService\obj\Debug\net8.0\ref\IdentityService.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\IdentityService\obj\Debug\net8.0\IdentityService.sourcelink.json

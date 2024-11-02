@@ -49,7 +49,6 @@ namespace GameService.Data.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<string>("Author")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<Guid>("CategoryId")
@@ -59,30 +58,24 @@ namespace GameService.Data.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Info")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("MinimumSystemRequirement")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("numeric");
 
                     b.Property<string>("RecommendedSystemRequirement")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("VideoUrl")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
@@ -105,7 +98,6 @@ namespace GameService.Data.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<string>("URL")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");

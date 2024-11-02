@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\GSteam\\GSteam-Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83C0FB25-9699-4C82-9D4A-B85AA01DDDB2}|IdentityService\\IdentityService.csproj|c:\\users\\asus\\source\\repos\\gsteam\\gsteam-backend\\identityservice\\customservices\\customprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83C0FB25-9699-4C82-9D4A-B85AA01DDDB2}|IdentityService\\IdentityService.csproj|solutionrelative:identityservice\\customservices\\customprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCC79CB3-A243-4EE3-8D12-D9CB85EBA0D8}|BasketService\\BasketService.csproj|c:\\users\\asus\\source\\repos\\gsteam\\gsteam-backend\\basketservice\\repository\\basketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCC79CB3-A243-4EE3-8D12-D9CB85EBA0D8}|BasketService\\BasketService.csproj|solutionrelative:basketservice\\repository\\basketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{418EECC5-9DC9-44C7-B7DE-3D843EE87B5B}|GameService\\GameService.csproj|c:\\users\\asus\\source\\repos\\gsteam\\gsteam-backend\\gameservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{418EECC5-9DC9-44C7-B7DE-3D843EE87B5B}|GameService\\GameService.csproj|solutionrelative:gameservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83C0FB25-9699-4C82-9D4A-B85AA01DDDB2}|IdentityService\\IdentityService.csproj|c:\\users\\asus\\source\\repos\\gsteam\\gsteam-backend\\identityservice\\customservices\\customprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C0FB25-9699-4C82-9D4A-B85AA01DDDB2}|IdentityService\\IdentityService.csproj|solutionrelative:identityservice\\customservices\\customprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,28 +38,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CustomProfileService.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GSteam\\GSteam-Backend\\IdentityService\\CustomServices\\CustomProfileService.cs",
               "RelativeDocumentMoniker": "IdentityService\\CustomServices\\CustomProfileService.cs",
               "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GSteam\\GSteam-Backend\\IdentityService\\CustomServices\\CustomProfileService.cs",
               "RelativeToolTip": "IdentityService\\CustomServices\\CustomProfileService.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAswA8AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T09:47:57.431Z",
+              "WhenOpened": "2024-11-02T10:57:35.013Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GSteam\\GSteam-Backend\\GameService\\Program.cs",
-              "RelativeDocumentMoniker": "GameService\\Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GSteam\\GSteam-Backend\\GameService\\Program.cs",
-              "RelativeToolTip": "GameService\\Program.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAADAAAAADAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "BasketRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GSteam\\GSteam-Backend\\BasketService\\Repository\\BasketRepository.cs",
+              "RelativeDocumentMoniker": "BasketService\\Repository\\BasketRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GSteam\\GSteam-Backend\\BasketService\\Repository\\BasketRepository.cs",
+              "RelativeToolTip": "BasketService\\Repository\\BasketRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA5wBYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T09:24:34.092Z",
+              "WhenOpened": "2024-11-02T10:02:02.708Z",
               "EditorCaption": ""
             }
           ]

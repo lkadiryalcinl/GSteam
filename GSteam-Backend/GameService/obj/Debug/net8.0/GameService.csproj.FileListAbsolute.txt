@@ -129,3 +129,4 @@ C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\GameService\obj\Debug\net8.0\re
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\GameService\obj\Debug\net8.0\GameService.pdb
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\GameService\obj\Debug\net8.0\GameService.genruntimeconfig.cache
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\GameService\obj\Debug\net8.0\ref\GameService.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\GameService\obj\Debug\net8.0\GameService.sourcelink.json

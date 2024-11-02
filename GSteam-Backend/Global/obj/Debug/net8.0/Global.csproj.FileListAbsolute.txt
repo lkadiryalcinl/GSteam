@@ -13,3 +13,4 @@ C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\Global.
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\refint\Global.dll
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\Global.pdb
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\ref\Global.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Global\obj\Debug\net8.0\Global.sourcelink.json

@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\GSteam\\GSteam-Backend\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{83C0FB25-9699-4C82-9D4A-B85AA01DDDB2}|IdentityService\\IdentityService.csproj|c:\\users\\asus\\source\\repos\\gsteam\\gsteam-backend\\identityservice\\customservices\\customprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83C0FB25-9699-4C82-9D4A-B85AA01DDDB2}|IdentityService\\IdentityService.csproj|solutionrelative:identityservice\\customservices\\customprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{418EECC5-9DC9-44C7-B7DE-3D843EE87B5B}|GameService\\GameService.csproj|c:\\users\\asus\\source\\repos\\gsteam\\gsteam-backend\\gameservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{418EECC5-9DC9-44C7-B7DE-3D843EE87B5B}|GameService\\GameService.csproj|solutionrelative:gameservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,31 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CustomProfileService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GSteam\\GSteam-Backend\\IdentityService\\CustomServices\\CustomProfileService.cs",
-              "RelativeDocumentMoniker": "IdentityService\\CustomServices\\CustomProfileService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GSteam\\GSteam-Backend\\IdentityService\\CustomServices\\CustomProfileService.cs",
-              "RelativeToolTip": "IdentityService\\CustomServices\\CustomProfileService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T09:47:57.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GSteam\\GSteam-Backend\\GameService\\Program.cs",
-              "RelativeDocumentMoniker": "GameService\\Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GSteam\\GSteam-Backend\\GameService\\Program.cs",
-              "RelativeToolTip": "GameService\\Program.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAADAAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T09:24:34.092Z"
             }
           ]
         }

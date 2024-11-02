@@ -9,3 +9,4 @@ C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Contracts\obj\Debug\net8.0\Cont
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Contracts\obj\Debug\net8.0\refint\Contracts.dll
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Contracts\obj\Debug\net8.0\Contracts.pdb
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Contracts\obj\Debug\net8.0\ref\Contracts.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\Contracts\obj\Debug\net8.0\Contracts.sourcelink.json
