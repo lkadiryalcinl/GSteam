@@ -1,5 +1,8 @@
-﻿using BasketService.Base;
+﻿using AutoMapper;
+using BasketService.Base;
 using BasketService.Models;
+using Contracts;
+using MassTransit;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 using System.Security.Claims;
@@ -13,8 +16,10 @@ namespace BasketService.Repository
         private readonly IDatabase _database;
         private readonly IHttpContextAccessor _contextAccessor;
         private readonly string UserId;
+        private readonly IPublishEndpoint _publishEndpoint;
+        private readonly IMapper _mapper;
 
-        public BasketRepository(IConfiguration configuration, IHttpContextAccessor contextAccessor)
+        public BasketRepository(IConfiguration configuration, IHttpContextAccessor contextAccessor, IPublishEndpoint publishEndpoint, IMapper mapper)
         {
             _configuration = configuration;
             connectionString = _configuration.GetValue<string>("RedisDatabase")??"localhost";
@@ -22,7 +27,10 @@ namespace BasketService.Repository
             _database = _connectionMultiplexer.GetDatabase();
             _contextAccessor = contextAccessor;
             UserId = _contextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value.ToString();
+            _publishEndpoint = publishEndpoint;
+            _mapper = mapper;
         }
+
         public async Task<ResponseModel<bool>> AddBasket(BasketModel model)
         {
             ResponseModel<bool> result = new();
@@ -86,5 +94,42 @@ namespace BasketService.Repository
             model.IsSuccess=true;
             return model;
         }
+
+        public async Task<ResponseModel<bool>> Checkout()
+        {
+            List<CheckoutModel> checkouts = [];
+            ResponseModel<bool> responseModel = new();
+            var response = await _database.ListRangeAsync(UserId);
+            foreach (var item in response)
+            {
+                CheckoutModel _checkout = new();
+                var objResult = JsonConvert.DeserializeObject<BasketModel>(item);
+                _mapper.Map(objResult, _checkout);
+                _checkout.UserId = Guid.Parse(UserId);
+                checkouts.Add(_checkout);
+            }
+            if (checkouts.Count > 0)
+            {
+                responseModel.IsSuccess = true;
+                foreach (var item in checkouts)
+                {
+                    try
+                    {
+                        await _publishEndpoint.Publish(_mapper.Map<CheckoutBasketModel>(item));
+                    }
+                    catch (Exception ex)
+                    {
+                        throw ex;
+                    }
+                }
+
+                await _database.KeyDeleteAsync(UserId);
+
+                return responseModel;
+            }
+            responseModel.IsSuccess = false;
+            return responseModel;
+        }
+
     }
 }

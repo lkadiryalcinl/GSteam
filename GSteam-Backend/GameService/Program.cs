@@ -1,5 +1,4 @@
 using GameService.Base;
-using GameService.Consumers;
 using GameService.Data;
 using GameService.Repositories.ForCategory;
 using GameService.Repositories.ForGame;
@@ -32,12 +31,14 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IGameRepository, GameRepository>();
 builder.Services.AddScoped<IFileService, FileService>();
 
-var consumers = new Dictionary<string, Type>
-{
-    { "game-created-fault", typeof(GameCreatedFaultConsumer) }
-};
+//var consumers = new Dictionary<string, Type>
+//{
+//    { "game-created-fault", typeof(GameCreatedFaultConsumer) }
+//};
 
-builder.Services.AddMassTransitWithRabbitMq<GameCreatedFaultConsumer>(builder.Configuration, "game", consumers);
+//builder.Services.AddMassTransitWithRabbitMq<GameCreatedFaultConsumer>(builder.Configuration, "game", consumers);
+
+builder.Services.AddMassTransitWithRabbitMq(builder.Configuration, "game");
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opts =>
 {

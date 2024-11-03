@@ -42,3 +42,4 @@ C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\FilterService\obj\Debug\net8.0\
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\FilterService\obj\Debug\net8.0\FilterService.pdb
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\FilterService\obj\Debug\net8.0\FilterService.genruntimeconfig.cache
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\FilterService\obj\Debug\net8.0\ref\FilterService.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\FilterService\obj\Debug\net8.0\FilterService.sourcelink.json

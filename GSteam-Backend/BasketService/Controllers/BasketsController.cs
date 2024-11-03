@@ -10,7 +10,7 @@ namespace BasketService.Controllers
     public class BasketsController(IBasketRepository basketRepository) : ControllerBase
     {
         private readonly IBasketRepository _basketRepository = basketRepository;
-        [HttpPost]
+        [HttpPost("AddBasketItem")]
         [Authorize]
         public async Task<IActionResult> AddBasketItem(BasketModel model)
         {
@@ -39,6 +39,14 @@ namespace BasketService.Controllers
         public async Task<IActionResult> RemoveBasketItem([FromRoute]long index)
         {
             var res = await _basketRepository.RemoveBasketItem(index);
+            return Ok(res);
+        }
+
+        [HttpPost("Checkout")]
+        [Authorize]
+        public async Task<IActionResult> Checkout()
+        {
+            var res = await _basketRepository.Checkout();
             return Ok(res);
         }
     }

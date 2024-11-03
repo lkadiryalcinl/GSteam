@@ -1,22 +1,6 @@
 [
   {
     "ContainingType": "BasketService.Controllers.BasketsController",
-    "Method": "AddBasketItem",
-    "RelativePath": "api/Baskets",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "BasketService.Models.BasketModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BasketService.Controllers.BasketsController",
     "Method": "RemoveBasketItem",
     "RelativePath": "api/Baskets/{index}",
     "HttpMethod": "DELETE",
@@ -26,6 +10,22 @@
       {
         "Name": "index",
         "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BasketService.Controllers.BasketsController",
+    "Method": "AddBasketItem",
+    "RelativePath": "api/Baskets/AddBasketItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "BasketService.Models.BasketModel",
         "IsRequired": true
       }
     ],
@@ -52,6 +52,16 @@
     "Method": "GetListItems",
     "RelativePath": "api/Baskets/BasketItems",
     "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BasketService.Controllers.BasketsController",
+    "Method": "Checkout",
+    "RelativePath": "api/Baskets/Checkout",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [],

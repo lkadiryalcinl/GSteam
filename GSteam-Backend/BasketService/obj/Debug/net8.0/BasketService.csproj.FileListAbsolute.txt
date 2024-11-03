@@ -42,3 +42,13 @@ C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\BasketService\bin\Debug\net8.0\
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\BasketService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\BasketService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\BasketService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\BasketService\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\BasketService\bin\Debug\net8.0\MassTransit.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\BasketService\bin\Debug\net8.0\MassTransit.Abstractions.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\BasketService\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\BasketService\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\BasketService\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\BasketService\bin\Debug\net8.0\Contracts.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\BasketService\bin\Debug\net8.0\Global.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\BasketService\bin\Debug\net8.0\Contracts.pdb
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\BasketService\bin\Debug\net8.0\Global.pdb

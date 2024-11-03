@@ -54,3 +54,4 @@ C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\SearchService\obj\Debug\net8.0\
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\SearchService\obj\Debug\net8.0\SearchService.pdb
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\SearchService\obj\Debug\net8.0\SearchService.genruntimeconfig.cache
 C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\SearchService\obj\Debug\net8.0\ref\SearchService.dll
+C:\Users\ASUS\source\repos\GSteam\GSteam-Backend\SearchService\obj\Debug\net8.0\SearchService.sourcelink.json

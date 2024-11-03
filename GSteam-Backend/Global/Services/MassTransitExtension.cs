@@ -48,6 +48,32 @@ namespace Global.Services
 
             return services;
         }
+
+        public static IServiceCollection AddMassTransitWithRabbitMq(this IServiceCollection services, IConfiguration configuration, string endpointPrefix)
+        {
+            // MassTransit ayarlarını RabbitMQ config'den çek
+            var massTransitConfs = new MassTransitConfs();
+            configuration.GetSection("RabbitMQ").Bind(massTransitConfs);
+
+            services.AddMassTransit(opt =>
+            {
+                opt.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter(endpointPrefix, false));
+
+                // RabbitMQ ile bağlantı ve receive endpoint yapılandırması
+                opt.UsingRabbitMq((context, config) =>
+                {
+                    config.Host(massTransitConfs.Host, "/", host =>
+                    {
+                        host.Username(massTransitConfs.Username);
+                        host.Password(massTransitConfs.Password);
+                    });
+
+                    config.ConfigureEndpoints(context); // Tüm consumer'lar merkezi olarak yapılandırılır
+                });
+            });
+
+            return services;
+        }
     }
 }
 

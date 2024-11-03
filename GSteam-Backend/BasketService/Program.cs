@@ -1,5 +1,6 @@
 using BasketService.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Global.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opts =>
 {
@@ -19,6 +21,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     opts.TokenValidationParameters.NameClaimType = "username";
 
 });
+
+builder.Services.AddMassTransitWithRabbitMq(builder.Configuration, "basket");
 
 builder.Services.AddScoped<IBasketRepository,BasketRepository>();
 
