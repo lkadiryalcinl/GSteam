@@ -75,6 +75,10 @@ namespace GameService.Data.Migrations
                     b.Property<string>("RecommendedSystemRequirement")
                         .HasColumnType("text");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("VideoUrl")
                         .HasColumnType("text");
 

@@ -130,6 +130,10 @@
               "target": "Package",
               "version": "[1.26.2, )"
             },
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.66.0, )"
+            },
             "MassTransit": {
               "target": "Package",
               "version": "[8.2.5, )"

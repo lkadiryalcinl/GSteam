@@ -7,9 +7,8 @@ namespace BasketService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BasketsController(IBasketRepository basketRepository) : ControllerBase
+    public class BasketsController(IBasketRepository _basketRepository) : ControllerBase
     {
-        private readonly IBasketRepository _basketRepository = basketRepository;
         [HttpPost("AddBasketItem")]
         [Authorize]
         public async Task<IActionResult> AddBasketItem(BasketModel model)

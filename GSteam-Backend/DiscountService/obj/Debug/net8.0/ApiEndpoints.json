@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "DiscountService.Controllers.DiscountsController",
+    "Method": "CreateDiscount",
+    "RelativePath": "api/Discounts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "DiscountService.Models.DiscountModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

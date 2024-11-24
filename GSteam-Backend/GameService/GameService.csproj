@@ -10,6 +10,7 @@
 	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="13.0.1" />
 		<PackageReference Include="CloudinaryDotNet" Version="1.26.2" />
+		<PackageReference Include="Grpc.AspNetCore" Version="2.66.0" />
 		<PackageReference Include="MassTransit" Version="8.2.5" />
 		<PackageReference Include="MassTransit.EntityFrameworkCore" Version="8.2.5" />
 		<PackageReference Include="MassTransit.RabbitMQ" Version="8.2.5" />
@@ -26,6 +27,10 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\Contracts\Contracts.csproj" />
 	  <ProjectReference Include="..\Global\Global.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Protobuf Include="protos/games.proto" GrpcServices="Server"/>
 	</ItemGroup>
 
 </Project>

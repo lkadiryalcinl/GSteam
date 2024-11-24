@@ -31,12 +31,6 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IGameRepository, GameRepository>();
 builder.Services.AddScoped<IFileService, FileService>();
 
-//var consumers = new Dictionary<string, Type>
-//{
-//    { "game-created-fault", typeof(GameCreatedFaultConsumer) }
-//};
-
-//builder.Services.AddMassTransitWithRabbitMq<GameCreatedFaultConsumer>(builder.Configuration, "game", consumers);
 
 builder.Services.AddMassTransitWithRabbitMq(builder.Configuration, "game");
 
@@ -48,6 +42,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     opts.TokenValidationParameters.NameClaimType = "username";
 
 });
+
+builder.Services.AddGrpc();
 
 var app = builder.Build();
 
@@ -65,5 +61,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapGrpcService<GrpcGameService>();
 
 app.Run();
